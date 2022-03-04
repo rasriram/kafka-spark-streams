@@ -1,12 +1,5 @@
 # Kafka + Spark Streaming Example
 
-### Watch the video [here](https://www.youtube.com/watch?v=9D7-BZnPiTY)
-
-This is an example of building a Proof-of-concept for Kafka + Spark streaming from scratch. This is meant to be a resource for video tutorial I made, so it won't go into extreme detail on certain steps. It can still be used as a follow-along tutorial if you like.
-
-Also, this isn't meant to explain the design of Kafka/Hadoop, instead it's an actual hands-on example. I'd recommend learning the basics of these technologies before jumping in.
-
-When considering this POC, I thought Twitter would be a great source of streamed data, plus it would be easy to peform simple transformations on the data. So for this example, we will 
 * create a stream of tweets that will be sent to a Kafka queue
 * pull the tweets from the Kafka cluster
 * calculate the character count and word count for each tweet
@@ -496,6 +489,3 @@ If you were able to run the producer script and the spark transformer, things sh
 Next, go back to "terminal #5 (Hive shell), and run the `select count(*)` to see if the data is being written to Hive. If you get something greater than zero, it's working! You can investigate further with different queries.
 
 ---
-## Wrapping Up
-
-Well that's it! It was a pretty simple example, but now you should be able to add different elements and make things more complicated / interesting! 
